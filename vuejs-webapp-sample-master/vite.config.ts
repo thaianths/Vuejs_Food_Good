@@ -18,11 +18,7 @@ export default defineConfig({
       sassVariables: "src/quasar-variables.scss",
     }),
   ],
-  module.exports = {
-  publicPath: process.env.NODE_ENV === 'production'
-    ? '/Food_App/' // Thay tên repository của các bạn vào đây nhé
-    : '/'
-},
+
   resolve: {
     alias: {
       "@": fileURLToPath(new URL("./src", import.meta.url)),
